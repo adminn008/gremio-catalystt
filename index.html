@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapa Catalyst - Colégio Estadual Tiradentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cor-fundo: #0a0a0a; 
+            --cor-card: #161616;  
+            --cor-texto: #ffffff; 
+            --cor-destaque: #ffffff; 
+            --cor-cinza: #a1a1a1;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        body { background-color: var(--cor-fundo); color: var(--cor-texto); line-height: 1.6; }
+
+        /* Header de Impacto */
+        header { 
+            background: #000000; 
+            padding: 4rem 1rem; 
+            text-align: center; 
+            border-bottom: 1px solid #222;
+        }
+        header h1 { font-size: 3rem; font-weight: 900; letter-spacing: -2px; text-transform: uppercase; margin-bottom: 5px; }
+        header p { color: var(--cor-cinza); font-size: 1.1rem; letter-spacing: 2px; }
+
+        nav { 
+            background: rgba(0,0,0,0.9); 
+            padding: 15px; 
+            text-align: center; 
+            position: sticky; 
+            top: 0; 
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #222;
+        }
+        nav a { color: var(--cor-texto); text-decoration: none; margin: 0 15px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; transition: 0.3s; }
+        nav a:hover { color: var(--cor-cinza); }
+
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
+
+        .secao-titulo { font-size: 1.8rem; margin: 40px 0 20px; font-weight: 900; text-transform: uppercase; border-left: 4px solid white; padding-left: 15px; }
+        
+        .card-aviso { 
+            background: var(--cor-card); 
+            padding: 25px; 
+            border-radius: 4px; 
+            margin-bottom: 20px; 
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+        .card-aviso:hover { border-color: #444; background: #1c1c1c; }
+        .card-aviso h3 { margin-bottom: 10px; color: #fff; }
+        .card-aviso p { color: var(--cor-cinza); font-size: 0.95rem; }
+
+        /* Instagram Catalyst Style */
+        .btn-insta { 
+            display: inline-block; 
+            background: white; 
+            color: black; 
+            padding: 15px 40px; 
+            border-radius: 2px; 
+            text-decoration: none; 
+            font-weight: 900; 
+            text-transform: uppercase;
+            margin: 20px 0;
+            transition: 0.3s;
+        }
+        .btn-insta:hover { background: #ccc; transform: scale(1.05); }
+
+        /* Google Forms Area */
+        .area-form { 
+            background: #fff; 
+            border-radius: 4px; 
+            overflow: hidden; 
+            margin-top: 20px; 
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+        iframe { width: 100%; height: 750px; border: none; }
+
+        footer { text-align: center; padding: 80px 20px; color: #444; font-size: 0.7rem; letter-spacing: 1px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>CATALYST</h1>
+        <p>Colégio Estadual Tiradentes</p>
+    </header>
+
+    <nav>
+        <a href="#avisos">Avisos</a>
+        <a href="#sugestoes">Sugestões</a>
+        <a href="#insta">Instagram</a>
+    </nav>
+
+    <div class="container">
+        
+        <div id="avisos">
+            <h2 class="secao-titulo">Comunicados</h2>
+            
+            <div class="card-aviso">
+                <h3>🚀 Bem-vindos ao Site Oficial</h3>
+                <p>Aqui é o canal direto da Chapa Catalyst com os alunos do Tiradentes. Transparência total.</p>
+            </div>
+
+            <div class="card-aviso">
+                <h3>📢 Caixa de Sugestões Aberta</h3>
+                <p>Nossa equipe lê todas as mensagens enviadas pelo formulário abaixo semanalmente.</p>
+            </div>
+        </div>
+
+        <div id="insta" style="text-align: center; padding: 60px 0;">
+            <h2 style="font-weight: 900; margin-bottom: 10px;">@gremio_catalyst</h2>
+            <p style="color: var(--cor-cinza); margin-bottom: 20px;">Acompanhe nossas ações e projetos no Instagram.</p>
+            <a href="https://www.instagram.com/gremio_catalyst?igsh=b280NmRpajlmMWZh" target="_blank" class="btn-insta">
+                Seguir Instagram
+            </a>
+        </div>
+
+        <div id="sugestoes">
+            <h2 class="secao-titulo">Voz do Aluno</h2>
+            <p style="margin-bottom: 20px; color: var(--cor-cinza);">Envie sugestões, reclamações ou ideias de eventos. Sua identidade será preservada se preferir.</p>
+            <div class="area-form">
+                <iframe src="LINK_DO_SEU_GOOGLE_FORMS_AQUI">Carregando…</iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 CHAPA CATALYST - GESTÃO ATIVA<br>
+        C. E. TIRADENTES
+    </footer>
+
+</body>
+</html>
